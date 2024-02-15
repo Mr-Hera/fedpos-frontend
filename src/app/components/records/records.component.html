@@ -1,6 +1,6 @@
 <h3>Current Records:</h3>
 <app-record-item *ngFor="let record of records" [record]="record"></app-record-item><br><hr><br>
 <h3>VAT Statements:</h3>
-<app-record-item *ngFor="let record of records" [record]="record"></app-record-item><br><hr><br>
+<app-vat-item *ngFor="let val of vats" [val]="val"></app-vat-item><br><hr><br>
 <h3>Discount Statements:</h3>
-<app-record-item *ngFor="let record of records" [record]="record"></app-record-item><br><hr><br>
+<app-discount-item *ngFor="let discount of discounts" [discount]="discount"></app-discount-item><br><hr><br>

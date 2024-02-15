@@ -1,10 +1,10 @@
-export interface Record {
+export interface Vat {
     id?: number;
     name: string;
     category: string;
     unit: string;
     price: number;
-    description: string;
-    vat?: boolean;
-    discount?: boolean;
+    vat?: string;
+    created_at: string;
+    updated_at: string;
 }

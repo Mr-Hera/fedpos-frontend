@@ -10,6 +10,7 @@ import { Record } from '../../Record';
 })
 export class RecordItemComponent implements OnInit {
   @Input() record!: Record;
+  // @Input() discount!: Record;
   constructor() {}
 
   ngOnInit(): void {
