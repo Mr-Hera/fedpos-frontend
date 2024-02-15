@@ -1,4 +1,5 @@
-<h3>Current Records:</h3>
+<app-add-record (onAddTask)="addRecord($event)"></app-add-record>
+<h3>Product Records:</h3>
 <app-record-item *ngFor="let record of records" [record]="record"></app-record-item><br><hr><br>
 <h3>VAT Statements:</h3>
 <app-vat-item *ngFor="let val of vats" [val]="val"></app-vat-item><br><hr><br>

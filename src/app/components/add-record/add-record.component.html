@@ -1,0 +1,38 @@
+<form (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <h4>Enter record details below to keep track of your data:</h4>
+    </div>
+    <div class="form-control">
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="name" placeholder="Add Product Name..." required />
+    </div>
+    <div class="form-control">
+        <label for="unit">Unit:</label>
+        <input  type="text" id="unit" name="unit" [(ngModel)]="unit" placeholder="Product measurement unit..." required />
+    </div>
+    <div class="form-control">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" style="width: 100%;padding: 10px;" [(ngModel)]="description" placeholder="Brief description here..." required></textarea>
+    </div>
+    <div class="form-control">
+        <label for="category_name">Category Name:</label>
+        <input type="text" id="category_name" name="category_name" [(ngModel)]="category_name" placeholder="Add Product Name..." required />
+    </div>
+    <div class="form-control">
+        <label for="sales_count">No. of sales:</label>
+        <input type="number" min="0" id="sales_count" name="sales_count" [(ngModel)]="sales_count" placeholder="No. of sales..." required />
+    </div>
+    <div class="form-control">
+        <label for="price">Price:</label>
+        <input type="number" min="0" id="price" name="price" [(ngModel)]="price" placeholder="Add Price..." required />
+    </div>
+    <div class="form-control form-control-check">
+        <label for="vat">VAT<i>(check box to apply 16% VAT):</i></label>
+        <input type="checkbox" id="vat" name="vat" [(ngModel)]="vat" required />
+    </div>
+    <div class="form-control form-control-check">
+        <label for="discount">Discount<i>(check box to apply 10% Discount):</i></label>
+        <input  type="checkbox" id="discount" name="discount" [(ngModel)]="discount" required />
+    </div>
+    <input type="submit" class="btn btn-block" value="Proceed" />
+</form><br><hr><hr><br>
